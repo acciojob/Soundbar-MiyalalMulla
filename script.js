@@ -5,6 +5,7 @@ const buttons = document.getElementById("buttons");
 sounds.forEach((sound)=>{
 	const audio = document.createElement("audio");
 	audio.id=sound;
+	audio.src = `./sounds/${sound}.mp3`;
 	audio.preload = 'auto';
 	document.body.appendChild(audio);
 
