@@ -10,7 +10,7 @@ sounds.forEach((sound)=>{
 
 	//visible button
 	const btn = document.createElement('button');
-	btn.class = "btn";
+	btn.className = "btn";
 	btn.textContent = sound;
 
 	btn.addEventListener("click",()=>{
@@ -25,7 +25,7 @@ const stopBtn = document.createElement("button");
 stopBtn.className = 'stop';
 stopBtn.textContent = 'stop';
 stopBtn.addEventListener("click", stopSounds);
-buttons.appendChild("stopBtn");
+buttons.appendChild(stopBtn);
 function stopSounds(){
 	sounds.forEach((sound)=>{
 		const el = document.getElementById(sound);
